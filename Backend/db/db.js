@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
+// Connected to mongo_Atlas
 function connectToDb() {
     mongoose.connect(process.env.DB_CONNECT
     ).then(() => {
